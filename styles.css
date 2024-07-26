@@ -1,0 +1,102 @@
+body{
+font-family: roboto;
+margin: 0;
+}
+
+header{
+background-color: #f2f2f2;
+}
+
+h1{
+    margin-left: 5%;
+}
+
+/*nav link display*/
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+    
+}
+/*Note to self: need help with spacing of nav links
+and also under the contact us button cant get the background to be grey*/
+
+a{
+    justify-content: space-between;
+}
+
+
+ul.topnav{
+    padding:0;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+    
+}
+/*nav link colors*/
+.topnav a{
+    color: #000;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: #ff5c0f;
+}
+
+/*whole bottom part*/
+section{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+/*all buttons*/
+button {
+background-color: #20a8b4;
+padding: 12px;
+border-width: 0;
+color: #fff;
+width: 100%;
+text-align: left;
+border-radius: 10px;
+}
+
+button:hover {
+    background-color: #ff5c0f;
+}
+
+img{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: auto;
+    }
+    ul{
+        flex-direction: row;
+        display:flex;
+        align-items: right;
+        justify-content: space-between;
+    
+    }
+    img{
+        display: flex;
+        width: 60%;
+        float: inline-end;
+    }
+section{
+    display: inline-block;
+
+}
+
+    }
+    
+    button{
+        width:auto
+        
+    }
+    h1{
+        align-content: center;
+    }
