@@ -1,102 +1,119 @@
 body{
-font-family: roboto;
-margin: 0;
+    font-family: roboto;
+    background-color:#fff
+    margin: 5px;
 }
-
-header{
-background-color: #f2f2f2;
+.navbar{
+    background-color: #f2f2f2;
 }
-
 h1{
-    margin-left: 5%;
+    margin:0%
+}
+ul{ 
+   padding-left: 0;
+   list-style: none;
+   margin: 0%;
+   padding-top: 3%;
 }
 
-/*nav link display*/
-ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    
-    
+.navdiv{
+    padding-left: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
-/*Note to self: need help with spacing of nav links
-and also under the contact us button cant get the background to be grey*/
+li{
+    padding-bottom: 5px;
+
+}
 
 a{
-    justify-content: space-between;
-}
-
-
-ul.topnav{
-    padding:0;
-    margin-right: 5%;
-    margin-left: 5%;
-    
-    
-}
-/*nav link colors*/
-.topnav a{
-    color: #000;
     text-decoration: none;
+    color: #000;
 }
 
-.topnav a:hover {
+a:hover{
     color: #ff5c0f;
 }
 
-/*whole bottom part*/
-section{
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 20%;
+button:hover{
+    color: #ff5c0f;
 }
 
-/*all buttons*/
-button {
-background-color: #20a8b4;
-padding: 12px;
-border-width: 0;
-color: #fff;
-width: 100%;
-text-align: left;
-border-radius: 10px;
+.contact-us{
+    background-color: #20a8b4;
+    padding: 12px;
+    border-radius: 10px;
+    border-width: 0;
+    width: 100%;
+    text-align: left;
+    
 }
 
-button:hover {
-    background-color: #ff5c0f;
+.contact-us a{
+    color: #fff;
+}
+.contact-us{
+    width: 100%;
+
+}
+.learn-more {
+    color: #fff;
+    width: 100%;background-color: #20a8b4;
+    padding: 12px;
+    border-radius: 10px;
+    border-width: 0;
+    text-align: left;
 }
 
-img{
+img {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
-    body{
-        font-size: auto;
-    }
-    ul{
-        flex-direction: row;
-        display:flex;
-        align-items: right;
-        justify-content: space-between;
-    
-    }
-    img{
-        display: flex;
-        width: 60%;
-        float: inline-end;
-    }
 section{
-    display: inline-block;
-
+    padding: 5%;
 }
 
-    }
-    
-    button{
-        width:auto
-        
-    }
-    h1{
-        align-content: center;
-    }
+
+@media screen and (min-width:768px){
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    font-size: 120%;
+}
+ul{
+    padding: 0%;
+}
+li{
+    display: inline-block; 
+    padding: 0%;
+}
+
+li a{
+    margin-right: 15px;
+}
+img {
+    display: flex;
+}
+.contact-us{
+    width: auto;
+}
+.learn-more{
+    width: auto;
+}
+img{
+    width: 50%;
+    height: 40%;
+    margin-left: 200px;
+}
+section{
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+h2{
+    font-size: 140%;
+}
+}
